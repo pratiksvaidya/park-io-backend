@@ -126,6 +126,8 @@ STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8080',
+    'http://park-io.herokuapp.com',
+    'https://park-io.herokuapp.com',
 )
 
 django_heroku.settings(locals())
