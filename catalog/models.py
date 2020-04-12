@@ -11,7 +11,7 @@ class ParkingSpot(models.Model):
     lat = models.FloatField(null=True)
     lon = models.FloatField(null=True)
     owner_email = models.CharField(max_length=100)
-    reserver_email = models.CharField(max_length=100, null=True)
+    reserver_email = models.CharField(max_length=100, null=True, blank=True)
     created = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs): 
